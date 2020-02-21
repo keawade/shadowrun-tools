@@ -1,5 +1,5 @@
-import { IPriority } from '../interfaces/IPriority';
-import { Race } from '../enums/Race';
+import { IPriority } from 'lib/interfaces/IPriority';
+import { Race } from 'lib/enums/Race';
 
 export const priorities: [
   IPriority,

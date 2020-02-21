@@ -1,5 +1,5 @@
 import { Attribute } from './Attribute';
-import { IAttributes } from '../interfaces/IAttributes';
+import { IAttributes } from 'lib/interfaces/IAttributes';
 import { Vision } from './Vision';
 
 export enum Race {

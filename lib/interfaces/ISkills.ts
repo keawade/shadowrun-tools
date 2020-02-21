@@ -1,4 +1,4 @@
-import { Skill } from '../enums/Skill';
+import { Skill } from 'lib/enums/Skill';
 
 export interface ISkills {
   [Skill.Astral]: number;
