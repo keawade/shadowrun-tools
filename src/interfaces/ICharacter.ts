@@ -1,5 +1,5 @@
-import { Attribute } from "./enums/Attribute";
-import { Skill } from "./enums/Skill";
+import { Attribute } from "../enums/Attribute";
+import { Skill } from "../enums/Skill";
 
 export interface ICharacter {
   attributes: {
