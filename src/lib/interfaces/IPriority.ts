@@ -1,4 +1,4 @@
-import { Race } from 'lib/enums/Race';
+import { Race } from '../enums/Race';
 
 export interface IPriority {
   priority: 'A' | 'B' | 'C' | 'D' | 'E';

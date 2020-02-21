@@ -1,4 +1,4 @@
-import { Attribute } from 'lib/enums/Attribute';
+import { Attribute } from '../enums/Attribute';
 
 export interface IAttributes {
   [Attribute.Body]: number;

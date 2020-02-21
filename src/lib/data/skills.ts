@@ -1,5 +1,5 @@
-import { Skill } from 'lib/enums/Skill';
-import { Attribute } from 'lib/enums/Attribute';
+import { Skill } from '../enums/Skill';
+import { Attribute } from '../enums/Attribute';
 
 type IBaseSkills = {
   [S in Skill]: {
