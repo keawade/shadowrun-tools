@@ -1,5 +1,5 @@
-import { IAttributes } from "./IAttributes";
-import { ISkills } from "./ISkills";
+import { IAttributes } from './IAttributes';
+import { ISkills } from './ISkills';
 
 export interface ICharacter {
   attributes: IAttributes;

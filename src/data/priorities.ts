@@ -1,5 +1,5 @@
-import { IPriority } from "../interfaces/IPriority";
-import { Race } from "../enums/Race";
+import { IPriority } from '../interfaces/IPriority';
+import { Race } from '../enums/Race';
 
 export const priorities: [
   IPriority,
@@ -9,7 +9,7 @@ export const priorities: [
   IPriority,
 ] = [
   {
-    priority: "A",
+    priority: 'A',
     resonanceType: {
       fullMagician: 4,
       aspectedMagician: 5,
@@ -24,7 +24,7 @@ export const priorities: [
     resources: 450_000,
   },
   {
-    priority: "B",
+    priority: 'B',
     resonanceType: {
       fullMagician: 3,
       aspectedMagician: 4,
@@ -39,7 +39,7 @@ export const priorities: [
     resources: 275_000,
   },
   {
-    priority: "C",
+    priority: 'C',
     resonanceType: {
       fullMagician: 2,
       aspectedMagician: 3,
@@ -54,7 +54,7 @@ export const priorities: [
     resources: 150_000,
   },
   {
-    priority: "D",
+    priority: 'D',
     resonanceType: {
       fullMagician: 1,
       aspectedMagician: 2,
@@ -69,7 +69,7 @@ export const priorities: [
     resources: 50_000,
   },
   {
-    priority: "E",
+    priority: 'E',
     resonanceType: {
       mundane: 0,
     },

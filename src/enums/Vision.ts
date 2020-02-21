@@ -1,4 +1,4 @@
 export enum Vision {
-  Thermographic = "thermographic",
-  LowLight = "lowLight",
+  Thermographic = 'thermographic',
+  LowLight = 'lowLight',
 }

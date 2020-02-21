@@ -1,7 +1,7 @@
-import { Race } from "../enums/Race";
+import { Race } from '../enums/Race';
 
 export interface IPriority {
-  priority: "A" | "B" | "C" | "D" | "E";
+  priority: 'A' | 'B' | 'C' | 'D' | 'E';
   resonanceType: {
     fullMagician?: number;
     aspectedMagician?: number;

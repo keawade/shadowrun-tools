@@ -1,13 +1,13 @@
-import { Attribute } from "./Attribute";
-import { IAttributes } from "../interfaces/IAttributes";
-import { Vision } from "./Vision";
+import { Attribute } from './Attribute';
+import { IAttributes } from '../interfaces/IAttributes';
+import { Vision } from './Vision';
 
 export enum Race {
-  Dwarf = "dwarf",
-  Elf = "elf",
-  Human = "human",
-  Ork = "ork",
-  Troll = "troll",
+  Dwarf = 'dwarf',
+  Elf = 'elf',
+  Human = 'human',
+  Ork = 'ork',
+  Troll = 'troll',
 }
 
 type IBaseRace = {
