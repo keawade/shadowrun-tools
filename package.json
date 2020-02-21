@@ -1,0 +1,16 @@
+{
+  "name": "shadowrun-tools",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [
+    "shadowrun",
+    "rpg"
+  ],
+  "scripts": {},
+  "author": "Keith Wade",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
+  }
+}
