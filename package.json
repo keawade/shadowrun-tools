@@ -6,9 +6,18 @@
     "shadowrun",
     "rpg"
   ],
-  "scripts": {},
   "author": "Keith Wade",
+  "contributors": [],
   "license": "MIT",
+  "homepage": "https://github.com/keawade/shadowrun-tools#readme",
+  "bugs": {
+    "url": "https://github.com/keawade/shadowrun-tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keawade/shadowrun-tools.git"
+  },
+  "scripts": {},
   "devDependencies": {
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
