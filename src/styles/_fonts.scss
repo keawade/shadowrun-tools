@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap');
+
+@font-face {
+  font-family: 'Elianto';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/Elianto-Regular.otf') format('opentype'),
+    url('./fonts/Elianto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nidus Sans';
+  src: url('./fonts/nidsans-webfont.eot');
+  src: url('./fonts/nidsans-webfont.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/nidsans-webfont.woff2') format('woff2'),
+    url('./fonts/nidsans-webfont.woff') format('woff'),
+    url('./fonts/nidsans-webfont.ttf') format('truetype'),
+    url('./fonts/nidsans-webfont.svg#nidus_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
