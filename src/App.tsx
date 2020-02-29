@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/app.scss';
 
 function App() {
+  // Nuyen  ¥
   return (
     <>
       <header>Shadowrun Utils</header>
