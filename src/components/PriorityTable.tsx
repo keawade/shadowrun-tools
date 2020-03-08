@@ -3,6 +3,7 @@ import React from 'react';
 import { priorities } from '../lib/data/priorities';
 import Magic from './Magic';
 import Metatype from './Metatype';
+import Nuyen from './Nuyen';
 
 function PriorityTable() {
   return (
@@ -29,7 +30,9 @@ function PriorityTable() {
             <td>
               <Magic priority={priority} />
             </td>
-            <td className='center'>{priority.resources} ¥</td>
+            <td className='center'>
+              <Nuyen amount={priority.resources} />
+            </td>
           </tr>
         ))}
       </tbody>
