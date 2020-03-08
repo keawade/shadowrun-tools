@@ -24,3 +24,10 @@ export type MagicTypes =
   | 'adept'
   | 'technomancer'
   | 'mundane';
+
+export type PriorityOption =
+  | 'metatype'
+  | 'attributes'
+  | 'skills'
+  | 'magic'
+  | 'resources';

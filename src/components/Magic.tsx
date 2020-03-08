@@ -9,10 +9,12 @@ const Magic = ({ resonance }: { resonance: IMagic }) => {
       {Object.keys(resonance).map(key => {
         switch (key) {
           case 'mundane':
-            return <div>{startCase(key)}</div>;
+            return (
+              <div key={`priority-magic-option-${key}`}>{startCase(key)}</div>
+            );
           case 'technomancer':
             return (
-              <div>
+              <div key={`priority-magic-option-${key}`}>
                 {startCase(key)}: {resonance[key]} Resonance
               </div>
             );
@@ -21,7 +23,7 @@ const Magic = ({ resonance }: { resonance: IMagic }) => {
           case 'mysticAdept':
           case 'adept':
             return (
-              <div>
+              <div key={`priority-magic-option-${key}`}>
                 {startCase(key)}: {resonance[key]} Magic
               </div>
             );
