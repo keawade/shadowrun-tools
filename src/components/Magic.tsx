@@ -3,7 +3,7 @@ import { startCase } from 'lodash';
 
 import { IPriority, ResonanceType } from '../lib/interfaces/IPriority';
 
-function Magic({ priority }: { priority: IPriority }) {
+const Magic = ({ priority }: { priority: IPriority }) => {
   const displayValues = (Object.keys(
     priority.resonanceType
   ) as ResonanceType[]).map(key => ({
@@ -28,6 +28,6 @@ function Magic({ priority }: { priority: IPriority }) {
         .join(', ')}
     </>
   );
-}
+};
 
 export default Magic;

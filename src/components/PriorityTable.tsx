@@ -5,7 +5,7 @@ import Magic from './Magic';
 import Metatype from './Metatype';
 import Nuyen from './Nuyen';
 
-function PriorityTable() {
+const PriorityTable = () => {
   return (
     <table>
       <thead>
@@ -38,6 +38,6 @@ function PriorityTable() {
       </tbody>
     </table>
   );
-}
+};
 
 export default PriorityTable;

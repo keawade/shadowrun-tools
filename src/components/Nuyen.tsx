@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Nuyen({ amount }: { amount: number }) {
+const Nuyen = ({ amount }: { amount: number }) => {
   const displayValue =
     amount
       .toString(10)
@@ -8,6 +8,6 @@ function Nuyen({ amount }: { amount: number }) {
       .join(',') + '¥';
 
   return <>{displayValue}</>;
-}
+};
 
 export default Nuyen;
