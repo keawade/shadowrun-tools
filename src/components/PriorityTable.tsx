@@ -20,7 +20,7 @@ const PriorityTable = () => {
       </thead>
       <tbody>
         {priorities.map(priority => (
-          <tr key={`priority-${priority.priority.toLowerCase()}`}>
+          <tr key={`priority-${priority.priority}`}>
             <td className='center'>{priority.priority}</td>
             <td>
               <Metatype
