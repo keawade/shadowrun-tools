@@ -12,38 +12,33 @@
     text-align: center;
   }
 
-  table {
-    width: 100%;
-    border-spacing: 2px 0;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 2px;
+    align-items: stretch;
+    justify-items: stretch;
 
-    td {
-      background-color: rgba(255, 255, 255, 0.1);
-
-      &.center {
-        text-align: center;
-      }
-    }
-
-    thead {
-      text-align: center;
+    .grid-header {
       font-weight: bold;
-
-      tr td {
-        padding: 0.25rem;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-        border-bottom: 2px solid $dark;
-      }
+      align-self: center;
+      justify-self: center;
+    }
+    .grid-cell {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
     }
 
-    tbody {
-      vertical-align: top;
+    .magic {
+      display: block;
+    }
 
-      tr {
-        td {
-          padding: 0.25rem;
-        }
-      }
+    .selected {
+      background-color: rgba(255, 255, 255, 0.25);
     }
   }
 }

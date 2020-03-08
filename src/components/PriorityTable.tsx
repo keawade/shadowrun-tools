@@ -7,39 +7,33 @@ import Nuyen from './Nuyen';
 
 const PriorityTable = () => {
   return (
-    <table>
-      <thead>
-        <tr>
-          <td>Priority</td>
-          <td>Metatype</td>
-          <td>Attributes</td>
-          <td>Skills</td>
-          <td>Magic/Resonance</td>
-          <td>Resources</td>
-        </tr>
-      </thead>
-      <tbody>
-        {priorities.map(priority => (
-          <tr key={`priority-${priority.priority}`}>
-            <td className='center'>{priority.priority}</td>
-            <td>
-              <Metatype
-                metatype={priority.metatype}
-                metatypeAdjustmentPoints={priority.adjustmentPoints}
-              />
-            </td>
-            <td className='center'>{priority.attributes}</td>
-            <td className='center'>{priority.skills}</td>
-            <td>
-              <Magic resonance={priority.magic} />
-            </td>
-            <td className='center'>
-              <Nuyen amount={priority.resources} />
-            </td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <div className='container'>
+      <div className='grid-header'></div>
+      <div className='grid-header'>Metatype</div>
+      <div className='grid-header'>Attributes</div>
+      <div className='grid-header'>Skills</div>
+      <div className='grid-header'>Magic/Resonance</div>
+      <div className='grid-header'>Resources</div>
+      {priorities.map(priority => (
+        <>
+          <div className='grid-header priority'>{priority.priority}</div>
+          <div className='grid-cell metatype'>
+            <Metatype
+              metatype={priority.metatype}
+              metatypeAdjustmentPoints={priority.adjustmentPoints}
+            />
+          </div>
+          <div className='grid-cell attribute'>{priority.attributes}</div>
+          <div className='grid-cell skill'>{priority.skills}</div>
+          <div className='grid-cell magic'>
+            <Magic resonance={priority.magic} />
+          </div>
+          <div className='grid-cell resource'>
+            <Nuyen amount={priority.resources} />
+          </div>
+        </>
+      ))}
+    </div>
   );
 };
 
