@@ -1,13 +1,21 @@
 import React from 'react';
 import { startCase } from 'lodash';
 
-import { IPriority } from '../lib/interfaces/IPriority';
+import {
+  PriorityMetatype,
+  PriorityMetatypeAdjustmentPoints,
+} from '../lib/interfaces/IPriority';
 
-const Metatype = ({ priority }: { priority: IPriority }) => {
+const Metatype = ({
+  metatype,
+  metatypeAdjustmentPoints,
+}: {
+  metatype: PriorityMetatype;
+  metatypeAdjustmentPoints: PriorityMetatypeAdjustmentPoints;
+}) => {
   return (
     <>
-      {priority.metatype.map(startCase).join(', ')} ({priority.adjustmentPoints}
-      )
+      {metatype.map(startCase).join(', ')} ({metatypeAdjustmentPoints})
     </>
   );
 };

@@ -23,7 +23,10 @@ const PriorityTable = () => {
           <tr key={`priority-${priority.priority.toLowerCase()}`}>
             <td className='center'>{priority.priority}</td>
             <td>
-              <Metatype priority={priority} />
+              <Metatype
+                metatype={priority.metatype}
+                metatypeAdjustmentPoints={priority.adjustmentPoints}
+              />
             </td>
             <td className='center'>{priority.attributes}</td>
             <td className='center'>{priority.skills}</td>
