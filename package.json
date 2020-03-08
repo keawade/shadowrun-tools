@@ -12,6 +12,7 @@
     "@types/react-dom": "^16.9.5",
     "aug-attr-spliced": "^0.2.0",
     "augmented-ui": "^1.1.0",
+    "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
     "normalize.css": "^8.0.1",
     "react": "^16.12.0",
@@ -41,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.149",
     "prettier": "^1.19.1"
   }
 }
