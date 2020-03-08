@@ -1,15 +1,13 @@
 import React from 'react';
 import { startCase } from 'lodash';
 
-import { IPriority, ResonanceType } from '../lib/interfaces/IPriority';
+import { MagicTypes, IMagic } from '../lib/interfaces/IPriority';
 
-const Magic = ({ priority }: { priority: IPriority }) => {
-  const displayValues = (Object.keys(
-    priority.resonanceType
-  ) as ResonanceType[]).map(key => ({
+const Magic = ({ resonance }: { resonance: IMagic }) => {
+  const displayValues = (Object.keys(resonance) as MagicTypes[]).map(key => ({
     key,
     name: startCase(key),
-    value: priority.resonanceType[key],
+    value: resonance[key],
   }));
 
   return (

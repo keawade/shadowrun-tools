@@ -28,7 +28,7 @@ const PriorityTable = () => {
             <td className='center'>{priority.attributes}</td>
             <td className='center'>{priority.skills}</td>
             <td>
-              <Magic priority={priority} />
+              <Magic resonance={priority.magic} />
             </td>
             <td className='center'>
               <Nuyen amount={priority.resources} />

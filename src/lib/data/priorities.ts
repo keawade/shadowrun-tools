@@ -10,7 +10,7 @@ export const priorities: [
 ] = [
   {
     priority: 'A',
-    resonanceType: {
+    magic: {
       fullMagician: 4,
       aspectedMagician: 5,
       mysticAdept: 4,
@@ -25,7 +25,7 @@ export const priorities: [
   },
   {
     priority: 'B',
-    resonanceType: {
+    magic: {
       fullMagician: 3,
       aspectedMagician: 4,
       mysticAdept: 3,
@@ -40,7 +40,7 @@ export const priorities: [
   },
   {
     priority: 'C',
-    resonanceType: {
+    magic: {
       fullMagician: 2,
       aspectedMagician: 3,
       mysticAdept: 2,
@@ -55,7 +55,7 @@ export const priorities: [
   },
   {
     priority: 'D',
-    resonanceType: {
+    magic: {
       fullMagician: 1,
       aspectedMagician: 2,
       mysticAdept: 1,
@@ -70,7 +70,7 @@ export const priorities: [
   },
   {
     priority: 'E',
-    resonanceType: {
+    magic: {
       mundane: 0,
     },
     metatype: [Race.Dwarf, Race.Elf, Race.Human, Race.Troll, Race.Ork],

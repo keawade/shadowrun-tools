@@ -2,9 +2,7 @@ import { Race } from '../enums/Race';
 
 export interface IPriority {
   priority: 'A' | 'B' | 'C' | 'D' | 'E';
-  resonanceType: {
-    [Resonance in ResonanceType]?: number;
-  };
+  magic: IMagic;
   metatype: Race[];
   adjustmentPoints: number;
   attributes: number;
@@ -12,7 +10,11 @@ export interface IPriority {
   resources: number;
 }
 
-export type ResonanceType =
+export type IMagic = {
+  [M in MagicTypes]?: number;
+};
+
+export type MagicTypes =
   | 'fullMagician'
   | 'aspectedMagician'
   | 'mysticAdept'
